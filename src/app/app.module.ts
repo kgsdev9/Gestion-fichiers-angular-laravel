@@ -9,6 +9,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { CreateDepartementComponent } from './Departement/create-departement/create-departement.component';
 import { ListeDepartementComponent } from './Departement/liste-departement/liste-departement.component';
 import { FormsModule } from '@angular/forms';
+import { EditDepartementComponent } from './Departement/edit-departement/edit-departement.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     HomeComponentComponent,
     CreateDepartementComponent,
-    ListeDepartementComponent
+    ListeDepartementComponent,
+    EditDepartementComponent
   ],
   imports: [
     BrowserModule,

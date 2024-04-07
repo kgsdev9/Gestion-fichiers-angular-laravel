@@ -20,5 +20,24 @@ export class ListeDepartementComponent implements OnInit {
     });
   }
 
+  export(data: any){
+    this.DepartementService.export(data).subscribe(res =>{
+      this.departements = res;
+    });
+  }
+
+
+  // insertData(){
+  //   this.DepartementService.insertData(this.employee).subscribe(res =>{
+  //     this.getData();
+  //   });
+
+
+  deleteData(id:any){
+    this.DepartementService.deleteData(id).subscribe(res => {
+      this.getData();
+    })
+  }
+
 
 }

@@ -1,5 +1,8 @@
 
 <a  href="" routerLink="/departement/create">Créer un departement</a>
+
+<button (click)="export(departements)">EXPOTER LES DONNES VERS EXCELL </button>
+
 <table class="table">
   <thead>
       <tr>
@@ -12,8 +15,9 @@
       <tr *ngFor="let dep of departements">
           <td>{{ dep.id }}</td>
           <td>{{ dep.nom }}</td>
-          <a href="">Editer</a>
-          <a href="">Supprimer</a>
+          <!-- <button class="btn btn-warning btn-sm mx-2" routerLink="departement/edit/{{ dep.id }}">Edition</button> -->
+          <a class="btn btn-warning btn-sm mx-2"  routerLink="/edition/{{ dep.id}}/edit">Edition du departement</a>
+          <button class="btn btn-danger btn-sm mz-2" (click)="deleteData(dep.id)">Supprimer</button>
       </tr>
   </tbody>
 </table>

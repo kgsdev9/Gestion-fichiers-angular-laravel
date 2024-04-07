@@ -5,12 +5,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { ListeDepartementComponent } from './Departement/liste-departement/liste-departement.component';
 import { CreateDepartementComponent } from './Departement/create-departement/create-departement.component';
+import { EditDepartementComponent } from './Departement/edit-departement/edit-departement.component';
 const routes: Routes = [
   { path: '', component: HomeComponentComponent, },
    { path: 'login', component: LoginComponent, title:'Connexion' },
    { path: 'register', component: RegisterComponent , title:'Inscription'},
    { path: 'departement', component: ListeDepartementComponent , title:'Lise des departements'},
    { path: 'departement/create', component: CreateDepartementComponent , title:'Création d\'un  departements'},
+   {path: 'edition/:DepartementId/edit', component:EditDepartementComponent}
+
 ];
 
 @NgModule({

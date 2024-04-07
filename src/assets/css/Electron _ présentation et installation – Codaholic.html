@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/ -->
+<html lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Electron : présentation et installation – Codaholic</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://stats.wp.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="alternate" type="application/rss+xml" title="Codaholic » Flux" href="https://codaholic.sillo.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="Codaholic » Flux des commentaires" href="https://codaholic.sillo.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Codaholic » Electron : présentation et installation Flux des commentaires" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/codaholic.sillo.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./Electron _ présentation et installation – Codaholic_files/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="./Electron _ présentation et installation – Codaholic_files/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./Electron _ présentation et installation – Codaholic_files/wp-mediaelement.min.css" type="text/css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="google-font-css" href="./Electron _ présentation et installation – Codaholic_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="normalize-css" href="./Electron _ présentation et installation – Codaholic_files/normalize.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./Electron _ présentation et installation – Codaholic_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="./Electron _ présentation et installation – Codaholic_files/font-awesome.all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="articlepress-style-css" href="./Electron _ présentation et installation – Codaholic_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="./Electron _ présentation et installation – Codaholic_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighterjs-css" href="./Electron _ présentation et installation – Codaholic_files/enlighterjs.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="./Electron _ présentation et installation – Codaholic_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./Electron _ présentation et installation – Codaholic_files/jetpack.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://codaholic.sillo.org/wp-json/"><link rel="alternate" type="application/json" href="https://codaholic.sillo.org/wp-json/wp/v2/posts/506"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codaholic.sillo.org/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5">
+<link rel="canonical" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/">
+<link rel="shortlink" href="https://wp.me/p7hzVv-8a">
+<link rel="alternate" type="application/json+oembed" href="https://codaholic.sillo.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodaholic.sillo.org%2F2017%2F11%2F30%2Felectron-presentation-et-installation%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://codaholic.sillo.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodaholic.sillo.org%2F2017%2F11%2F30%2Felectron-presentation-et-installation%2F&amp;format=xml">
+	<style>img#wpstats{display:none}</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Electron : présentation et installation">
+<meta property="og:url" content="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/">
+<meta property="og:description" content="Electron permet de créer des applications desktop multi-plateformes avec seulement du HTML, du CSS et du Javascript. Si vous savez développer pour le Web alors avec Electron vous savez aussi créer …">
+<meta property="article:published_time" content="2017-11-29T23:37:11+00:00">
+<meta property="article:modified_time" content="2017-12-03T15:17:03+00:00">
+<meta property="og:site_name" content="Codaholic">
+<meta property="og:image" content="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-10.png">
+<meta property="og:image:width" content="360">
+<meta property="og:image:height" content="211">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:text:title" content="Electron : présentation et installation">
+<meta name="twitter:image" content="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-10.png?w=640">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- End Jetpack Open Graph Tags -->
+<script src="./Electron _ présentation et installation – Codaholic_files/wp-emoji-release.min.js.téléchargement" defer=""></script></head>
+
+<body class="post-template-default single single-post postid-506 single-format-standard">
+
+<a class="skip-link screen-reader-text" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/#content">
+    Skip to content</a>
+
+<div id="page" class="site">
+
+    <!-- Progress -->
+    <p class="load-progress">
+        <a href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/#" id="show"></a>
+    </p>
+
+    <!--====== Header Start ======-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg center-brand static-nav header header--fixed">
+            <div class="container">
+                    					<a class="articlepress-logo-text navbar-brand" href="https://codaholic.sillo.org/"><h3>Codaholic</h3></a>
+    			
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#etanav">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <div class="main-navigation collapse navbar-collapse" id="etanav">
+                	<div class="menu-main-container"><ul id="menu-main" class="navbar-nav ml-auto main-menu"><li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="https://codaholic.sillo.org/svg-2/">SVG</a></li>
+<li id="menu-item-1683" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1683"><a href="https://codaholic.sillo.org/category/css/">CSS</a></li>
+<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584"><a href="https://codaholic.sillo.org/electron/">Electron</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-148"><a href="https://codaholic.sillo.org/2016/02/16/ionic-presentation/">Ionic</a></li>
+<li id="menu-item-897" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-897"><a href="https://codaholic.sillo.org/category/javascript/">Javascript</a>
+<ul class="sub-menu">
+	<li id="menu-item-1312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="https://codaholic.sillo.org/maitriser-javascript/">Maîtriser Javascript</a></li>
+	<li id="menu-item-898" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-898"><a href="https://codaholic.sillo.org/category/javascript/angular2/">Angular2</a></li>
+	<li id="menu-item-899" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899"><a href="https://codaholic.sillo.org/category/javascript/jeuhtml5/">Jeu HTML5</a></li>
+	<li id="menu-item-900" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-900"><a href="https://codaholic.sillo.org/category/javascript/typescript/">TypeScript</a></li>
+</ul>
+</li>
+<li id="menu-item-920" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-920"><a href="https://codaholic.sillo.org/category/prestashop/">Prestashop</a></li>
+<li id="menu-item-889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-889"><a href="https://codaholic.sillo.org/mentions-legales/">Mentions Légales</a>
+<ul class="sub-menu">
+	<li id="menu-item-890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-890"><a href="https://codaholic.sillo.org/politique-de-confidentialite/">Politique de confidentialité</a></li>
+</ul>
+</li>
+</ul></div>                </div>
+            </div>
+            <!--/.CONTAINER-->
+        </nav>
+        <!--/.main navbar-->
+    </header>
+    <!--====== Header End ======-->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		
+			<section class="single-page-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="blog-single-left">
+								<div class="single-page-hero">
+								<div class="single-page-hero-img">
+									
+			<div class="post-thumbnail">
+				<img width="360" height="211" src="./Electron _ présentation et installation – Codaholic_files/Capture-10.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-10.png 360w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-10-300x176.png 300w" sizes="(max-width: 360px) 100vw, 360px">			</div><!-- .post-thumbnail -->
+
+										</div>
+							</div>
+							<div class="single-page">
+								<h4 class="blog-info blog-info-single-page">
+								<span class="post-user"><i class="fas fa-user"></i> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://codaholic.sillo.org/author/momo/">momo</a></span></span></span>  <span class="time-date"><i class="far fa-calendar-alt"></i> Nov 30, 2017</span>
+									<span class="caretory">
+									<i class="far fa-list-alt"></i>Electron								</span>
+								</h4>
+								
+								<h1 class="single-page-title">
+									Electron : présentation et installation								</h1>
+								<div class="single-page-content">
+									<p class="single-page-text">
+										</p><p><a href="https://electronjs.org/" target="_blank" rel="noopener">Electron</a> permet de créer des applications desktop multi-plateformes avec seulement du HTML, du CSS et du Javascript. Si vous savez développer pour le Web alors avec Electron vous savez aussi créer une application pour PC ou Mac. C’est à rapprocher d’Apache Cordova qui permet de créer des applications mobiles avec les mêmes bases de code.</p>
+<p>Je vous propose une série d’article pour découvrir Electron et apprendre à l’utiliser.</p>
+<h1>Présentation</h1>
+<p>Electron est fondé sur deux technologies puissantes :</p>
+<ul>
+<li><a href="https://nodejs.org/fr/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://www.chromium.org/Home" target="_blank" rel="noopener">Chromium</a></li>
+</ul>
+<p>Node.js pour créer un serveur local et accéder aux fichiers, gérer les modules… Chromium pour l’affichage. Vous n’avez pas besoin d’une connaissance approfondie de Node.js pour utiliser Electron.</p>
+<p>Une application Electron ressemble aux applications créées avec d’autres langages et frameworks, pas besoin de lancer un navigateur, elle peut être démarrée à partir de la barre de Windows ou de l’équivalent sur Mac (je ne le pratique pas et mes articles seront donc plutôt orientés sur Windows mais j’évoquerai toujours l’aspect multi-plateformes).</p>
+<p>Pour vous faire une idée de quoi est capable Electron il existe une application de présentation <a href="https://electronjs.org/" target="_blank" rel="noopener">sur le site</a> :</p>
+<p><img decoding="async" class="aligncenter wp-image-507 size-full" src="./Electron _ présentation et installation – Codaholic_files/Capture.png" alt="" width="818" height="317" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture.png 818w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-300x116.png 300w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-768x298.png 768w" sizes="(max-width: 818px) 100vw, 818px"></p>
+<p>C’est évidemment une application Electron multi-plateforme ! Elle balaye pas mal de sujets :</p>
+<ul>
+<li>création et gestion des fenêtres</li>
+<li>gestion des menus et du clavier</li>
+<li>utilisation de dialogues</li>
+<li>utilisation des fichiers</li>
+<li>communication entre les processus</li>
+<li>utilisation du presse-papier</li>
+<li>…</li>
+</ul>
+<p>Je vous invite à parcourir cette présentation pour voir si Electron est fait pour vous !</p>
+<p>Electron est constitué de deux processus distincts :</p>
+<ul>
+<li>le processus principal (main process) :&nbsp; gestion du fonctionnement global (life-cycle), gestion des fichiers, gestion des modules. En gros c’est tout ce qui est en Javascript.</li>
+<li>le processus de rendu (renderer process) : rendu HTML et CSS, accès au DOM, API web…</li>
+</ul>
+<h1>Installation</h1>
+<p>La première chose à faire est évidemment d’installer Electron pour pouvoir s’en servir.</p>
+<h2>Node</h2>
+<p>Vous avez besoin d’une installation de <a href="https://nodejs.org/fr/" target="_blank" rel="noopener">Node.js</a> sur votre machine. Si vous n’êtes pas trop sûr d’en disposez ouvrez la console et taper cette commande :</p>
+<p><img decoding="async" class="size-full wp-image-508 aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-1.png" alt="" width="78" height="37"></p>
+<p>S’il est installé vous obtenez le numéro de version. Si cette version est un peu vieille je vous conseille de l’actualiser parce que vous risquez d’avoir des soucis par la suite.</p>
+<h2>Git</h2>
+<p>Je vais aussi utiliser <a href="https://git-scm.com/" target="_blank" rel="noopener">git</a> dans cet article. Alors vous pouvez regarder si vous l’avez dans la console :</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-509 aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-2.png" alt="" width="237" height="37"></p>
+<p>Là aussi si votre version est un peu périmée actualisez-la.</p>
+<h2>Electron</h2>
+<p>Vous pouvez maintenant installer Electron avec <strong>npm</strong> (c’est le gestionnaire de packages de Node.js). Il y a deux façons de l’installer :</p>
+<ul>
+<li>globalement</li>
+<li>par projet</li>
+</ul>
+<p>Je vous conseille de l’installer globalement :</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-godzilla enlighter-l-php enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw"><div class="enlighter-tooltip">Plain text</div></div><div class="enlighter-btn enlighter-btn-copy"><div class="enlighter-tooltip">Copy to clipboard</div></div><div class="enlighter-btn enlighter-btn-window"><div class="enlighter-tooltip">Open code in new window</div></div><div class="enlighter-btn enlighter-btn-website"><div class="enlighter-tooltip">EnlighterJS 3 Syntax Highlighter</div></div></div><div class="enlighter-code"><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">npm install electron -g</span></div></div></div><div class="enlighter-raw">npm install electron -g</div></div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="null">npm install electron -g</pre>
+<p>Ça prend un peu de temps mais au moins pour vos créations futures de projets ça sera rapide. Vous pouvez vérifier dans la console :</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-510 aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-3.png" alt="" width="114" height="49"></p>
+<p>Si vous préférez une installation par projet la syntaxe est celle-ci :</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-godzilla enlighter-l-php enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw"><div class="enlighter-tooltip">Plain text</div></div><div class="enlighter-btn enlighter-btn-copy"><div class="enlighter-tooltip">Copy to clipboard</div></div><div class="enlighter-btn enlighter-btn-window"><div class="enlighter-tooltip">Open code in new window</div></div><div class="enlighter-btn enlighter-btn-website"><div class="enlighter-tooltip">EnlighterJS 3 Syntax Highlighter</div></div></div><div class="enlighter-code"><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">npm install electron --save-dev --save-exact</span></div></div></div><div class="enlighter-raw">npm install electron --save-dev --save-exact</div></div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="null">npm install electron --save-dev --save-exact</pre>
+<h1>Démarrage rapide</h1>
+<p>Il existe <a href="https://github.com/electron/electron-quick-start" target="_blank" rel="noopener">un dépôt</a> qui propose une architecture de base pour Electron pour un démarrage rapide :</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-511 size-full" src="./Electron _ présentation et installation – Codaholic_files/Capture-4.png" alt="" width="1006" height="381" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-4.png 1006w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-4-300x114.png 300w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-4-768x291.png 768w" sizes="(max-width: 1006px) 100vw, 1006px"></p>
+<p>Pour l’installer c’est tout simple. d’abord on clone le dépôt avec git. Par exemple si je veux créer un dossier <strong>electron</strong> avec le contenu du dépôt :</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-godzilla enlighter-l-php enlighter-hover enlighter-show-rawcode"><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw"><div class="enlighter-tooltip">Plain text</div></div><div class="enlighter-btn enlighter-btn-copy"><div class="enlighter-tooltip">Copy to clipboard</div></div><div class="enlighter-btn enlighter-btn-window"><div class="enlighter-tooltip">Open code in new window</div></div><div class="enlighter-btn enlighter-btn-website"><div class="enlighter-tooltip">EnlighterJS 3 Syntax Highlighter</div></div></div><div class="enlighter-code"><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">git </span><span class="enlighter-k3">clone</span><span class="enlighter-text"> https:</span><span class="enlighter-c0">//github.com/electron/electron-quick-start electron</span></div></div></div><div class="enlighter-raw">git clone https://github.com/electron/electron-quick-start electron</div></div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="null">git clone https://github.com/electron/electron-quick-start electron</pre>
+<p><img loading="lazy" decoding="async" class="wp-image-512 size-full aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-5.png" alt="" width="557" height="99" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-5.png 557w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-5-300x53.png 300w" sizes="(max-width: 557px) 100vw, 557px"></p>
+<p>Ensuite il faut lancer l’installation des dépendances :</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-godzilla enlighter-l-php enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw"><div class="enlighter-tooltip">Plain text</div></div><div class="enlighter-btn enlighter-btn-copy"><div class="enlighter-tooltip">Copy to clipboard</div></div><div class="enlighter-btn enlighter-btn-window"><div class="enlighter-tooltip">Open code in new window</div></div><div class="enlighter-btn enlighter-btn-website"><div class="enlighter-tooltip">EnlighterJS 3 Syntax Highlighter</div></div></div><div class="enlighter-code"><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">cd electron</span></div></div><div class=""><div><span class="enlighter-text">npm install</span></div></div></div><div class="enlighter-raw">cd electron
+npm install</div></div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="null">cd electron
+npm install</pre>
+<p>Là aussi ça prend un peu de temps…</p>
+<p><img loading="lazy" decoding="async" class="wp-image-513 size-full aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-6.png" alt="" width="647" height="116" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-6.png 647w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-6-300x54.png 300w" sizes="(max-width: 647px) 100vw, 647px"></p>
+<p>Normalement vous devriez avoir ces dossiers :</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-514 aligncenter" src="./Electron _ présentation et installation – Codaholic_files/Capture-7.png" alt="" width="162" height="225"></p>
+<p>Il ne reste plus qu’à lancer l’application :</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-godzilla enlighter-l-php enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw"><div class="enlighter-tooltip">Plain text</div></div><div class="enlighter-btn enlighter-btn-copy"><div class="enlighter-tooltip">Copy to clipboard</div></div><div class="enlighter-btn enlighter-btn-window"><div class="enlighter-tooltip">Open code in new window</div></div><div class="enlighter-btn enlighter-btn-website"><div class="enlighter-tooltip">EnlighterJS 3 Syntax Highlighter</div></div></div><div class="enlighter-code"><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">npm start</span></div></div></div><div class="enlighter-raw">npm start</div></div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="null">npm start</pre>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-515 size-full" src="./Electron _ présentation et installation – Codaholic_files/Capture-8.png" alt="" width="474" height="67" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-8.png 474w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-8-300x42.png 300w" sizes="(max-width: 474px) 100vw, 474px"></p>
+<p>Et là normalement une fenêtre s’ouvre :</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-516 size-full" src="./Electron _ présentation et installation – Codaholic_files/Capture-9.png" alt="" width="821" height="624" srcset="https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-9.png 821w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-9-300x228.png 300w, https://codaholic.sillo.org/wp-content/uploads/2017/11/Capture-9-768x584.png 768w" sizes="(max-width: 821px) 100vw, 821px"></p>
+<p>Là c’est l’aspect avec Windows, ça doit être un peu différent sur les autres systèmes.</p>
+<p>La fenêtre peut être redimensionnée, réduite, elle apparaît dans la barre de Windows. Elle a tout d’une application native !</p>
+<p>Dans le prochain chapitre on analysera le code de cette application de démarrage…</p>
+<p>&nbsp;</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Partager&nbsp;:</h3><div class="sd-content"><ul data-sharing-events-added="true"><li><a href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/#" class="sharing-anchor sd-button share-more"><span>Partager</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;" data-sharing-more-button-id="0"><ul data-sharing-events-added="true"><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-506" class="share-facebook sd-button share-icon" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/?share=facebook&amp;nb=1" target="_blank" title="Cliquez pour partager sur Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-506" class="share-linkedin sd-button share-icon" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/?share=linkedin&amp;nb=1" target="_blank" title="Cliquez pour partager sur LinkedIn"><span>LinkedIn</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-506" class="share-twitter sd-button share-icon" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/?share=twitter&amp;nb=1" target="_blank" title="Cliquez pour partager sur Twitter"><span>Twitter</span></a></li><li class="share-end"></li></ul></div></div></div></div></div>									<p></p>
+								</div>
+								
+								<!-- Post Tag -->
+								<div class="post-tags">
+									<i class="fas fa-tags"><span class="tag-list"></span></i> 
+								</div>
+							</div>
+							
+							
+<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codaholic.sillo.org/2017/11/30/electron-presentation-et-installation/#respond" style="display:none;">Annuler la réponse</a></small></h3><p class="must-log-in">Vous devez <a href="https://codaholic.sillo.org/wp-login.php?redirect_to=https%3A%2F%2Fcodaholic.sillo.org%2F2017%2F11%2F30%2Felectron-presentation-et-installation%2F">vous connecter</a> pour publier un commentaire.</p>	</div><!-- #respond -->
+	
+	<nav class="navigation post-navigation" aria-label="Publications">
+		<h2 class="screen-reader-text">Navigation de l’article</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://codaholic.sillo.org/2016/05/30/angular2-un-cli/" rel="prev"><i class="fas fa-chevron-left"></i></a></div><div class="nav-next"><a href="https://codaholic.sillo.org/2017/12/01/electron-lapplication-de-demarrage/" rel="next"><i class="fas fa-chevron-right"></i></a></div></div>
+	</nav>
+</div><!-- #comments -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<!-- Sidebar Register -->
+							
+<aside id="secondary" class="widget-area">
+	<section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://codaholic.sillo.org/">
+        <div class="form-grop">
+	    	<input class="search-input" type="search" value="" name="s" placeholder="Search Here" required="">
+            <button type="submit" id="search-submit" class="articlepress-search-form search"></button>
+        </div>
+    </form></section>
+		<section id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widget-title">Articles récents</h2>
+		<ul>
+											<li>
+					<a href="https://codaholic.sillo.org/2020/08/09/bootstrap-5-arrive/">Bootstrap 5 arrive !</a>
+									</li>
+											<li>
+					<a href="https://codaholic.sillo.org/2020/03/02/les-7-guis/">Les 7 GUIS</a>
+									</li>
+											<li>
+					<a href="https://codaholic.sillo.org/2020/02/04/maitriser-javascript-web-components-partie-3/">Maîtriser Javascript : web components (partie 3)</a>
+									</li>
+											<li>
+					<a href="https://codaholic.sillo.org/2020/01/29/maitriser-javascript-web-components-2/">Maîtriser Javascript : web components (partie 2)</a>
+									</li>
+											<li>
+					<a href="https://codaholic.sillo.org/2020/01/23/maitriser-javascript-web-components-1/">Maîtriser Javascript : web components (partie 1)</a>
+									</li>
+					</ul>
+
+		</section><section id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Commentaires récents</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">momo</span> dans <a href="https://codaholic.sillo.org/2018/07/20/un-module-mandat-administratif-pour-prestashop/#comment-10">Un module mandat administratif pour Prestashop</a></li><li class="recentcomments"><span class="comment-author-link">adhb50</span> dans <a href="https://codaholic.sillo.org/2018/07/20/un-module-mandat-administratif-pour-prestashop/#comment-9">Un module mandat administratif pour Prestashop</a></li><li class="recentcomments"><span class="comment-author-link">momo</span> dans <a href="https://codaholic.sillo.org/2018/07/20/un-module-mandat-administratif-pour-prestashop/#comment-8">Un module mandat administratif pour Prestashop</a></li><li class="recentcomments"><span class="comment-author-link">chatchat</span> dans <a href="https://codaholic.sillo.org/2018/07/20/un-module-mandat-administratif-pour-prestashop/#comment-7">Un module mandat administratif pour Prestashop</a></li><li class="recentcomments"><span class="comment-author-link">momo</span> dans <a href="https://codaholic.sillo.org/2018/07/20/un-module-mandat-administratif-pour-prestashop/#comment-6">Un module mandat administratif pour Prestashop</a></li></ul></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>
+			<ul>
+					<li><a href="https://codaholic.sillo.org/2020/08/">août 2020</a></li>
+	<li><a href="https://codaholic.sillo.org/2020/03/">mars 2020</a></li>
+	<li><a href="https://codaholic.sillo.org/2020/02/">février 2020</a></li>
+	<li><a href="https://codaholic.sillo.org/2020/01/">janvier 2020</a></li>
+	<li><a href="https://codaholic.sillo.org/2019/12/">décembre 2019</a></li>
+	<li><a href="https://codaholic.sillo.org/2018/07/">juillet 2018</a></li>
+	<li><a href="https://codaholic.sillo.org/2018/02/">février 2018</a></li>
+	<li><a href="https://codaholic.sillo.org/2018/01/">janvier 2018</a></li>
+	<li><a href="https://codaholic.sillo.org/2017/12/">décembre 2017</a></li>
+	<li><a href="https://codaholic.sillo.org/2017/11/">novembre 2017</a></li>
+	<li><a href="https://codaholic.sillo.org/2016/05/">mai 2016</a></li>
+	<li><a href="https://codaholic.sillo.org/2016/04/">avril 2016</a></li>
+	<li><a href="https://codaholic.sillo.org/2016/03/">mars 2016</a></li>
+	<li><a href="https://codaholic.sillo.org/2016/02/">février 2016</a></li>
+			</ul>
+
+			</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Catégories</h2>
+			<ul>
+					<li class="cat-item cat-item-7"><a href="https://codaholic.sillo.org/category/javascript/angular2/">Angular2</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://codaholic.sillo.org/category/css/">CSS</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codaholic.sillo.org/category/electron/">Electron</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="https://codaholic.sillo.org/category/ionic/">Ionic</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codaholic.sillo.org/category/javascript/">Javascript</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codaholic.sillo.org/category/javascript/jeuhtml5/">Jeu HTML5</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://codaholic.sillo.org/category/prestashop/">Prestashop</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codaholic.sillo.org/category/svg/">svg</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://codaholic.sillo.org/category/javascript/typescript/">TypeScript</a>
+</li>
+			</ul>
+
+			</section><section id="meta-2" class="widget widget_meta"><h2 class="widget-title">Méta</h2>
+		<ul>
+			<li><a href="https://codaholic.sillo.org/wp-login.php?action=register">Inscription</a></li>			<li><a href="https://codaholic.sillo.org/wp-login.php">Connexion</a></li>
+			<li><a href="https://codaholic.sillo.org/feed/">Flux des publications</a></li>
+			<li><a href="https://codaholic.sillo.org/comments/feed/">Flux des commentaires</a></li>
+
+			<li><a href="https://fr.wordpress.org/">Site de WordPress-FR</a></li>
+		</ul>
+
+		</section></aside><!-- #secondary -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+		<div class="container">
+			<div class="site-info">
+				<div class="row">
+					<div class="col-md-7">
+						<p class="site-copyright">
+							© 2017 Codaholic  All Rights Reserved, Developed by <a href="https://themeasia.net/"> ThemeAsia</a>
+						</p>
+					</div>
+
+					<!-- Right -->
+									</div>
+			</div><!-- .site-info -->
+		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+
+<!-- Scroll To top -->
+
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/codaholic.sillo.org\/2017\/11\/30\/electron-presentation-et-installation\/":506};
+	</script>
+				<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/jquery.min.js.téléchargement" id="articlepress-jquery-js"></script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/popper.min.js.téléchargement" id="articlepress-popper-js"></script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/bootstrap.min.js.téléchargement" id="articlepress-bootstrap-js"></script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/comment-reply.min.js.téléchargement" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/main.js.téléchargement" id="articlepress-main-js"></script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/enlighterjs.min.js.téléchargement" id="enlighterjs-js"></script>
+<script type="text/javascript" id="enlighterjs-js-after">
+/* <![CDATA[ */
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":2,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":false,"theme":"godzilla","language":"php","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/e-202414.js.téléchargement" id="jetpack-stats-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="jetpack-stats-js-after">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"107624033\",\"post\":\"506\",\"tz\":\"2\",\"srv\":\"codaholic.sillo.org\",\"j\":\"1:13.3\"}") ]);
+_stq.push([ "clickTrackerInit", "107624033", "506" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Electron _ présentation et installation – Codaholic_files/sharing.min.js.téléchargement" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-linkedin' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-linkedin' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+/* ]]> */
+</script>
+
+
+
+<img src="./Electron _ présentation et installation – Codaholic_files/g.gif" alt="" width="6" height="5" id="wpstats"></body></html>

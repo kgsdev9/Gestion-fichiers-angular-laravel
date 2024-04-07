@@ -1,4 +1,36 @@
 
+<h1>Création d'un departement</h1>
+
+
+<form action="" (ngSubmit)="storeDepartement()">
+  <div class="form-group">
+    <label for="">Entrer le libllé du departement</label>
+    <h3>
+      la valeur selectionné est : {{selected_fruit}}
+  </h3>
+
+      <select  id="" class="form-control" (change)="affichagedesdynailiques($event)">
+        <option disabled value="null">Selectionner une adresse </option>
+        <option *ngFor="let option of departements" [value]="option.id" >
+           {{ option.nom }}
+        </option>
+      </select>
+
+    <input [(ngModel)]="name" name="name" class="form-control">
+
+  </div>
+  <button type="submit">Enregistrer</button>
+  <a routerLink="/departement">Retourner</a>
+
+</form>
+
+
+
+
+
+
+
+<!--
 
 <section class="h-100">
   <div class="container h-100">
@@ -31,4 +63,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
